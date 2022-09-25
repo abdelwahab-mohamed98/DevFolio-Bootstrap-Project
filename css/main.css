@@ -1,0 +1,305 @@
+:root {
+    --text-color: #1e1e1e;
+    --secondary-text-color: #4e4e4e;
+    --main-color: #0078ff;
+}
+body {
+    color: var(--text-color);
+    background-color: #f5f5f5;
+}
+/* Start Component  */
+.title-a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.line {
+    background-color: var(--main-color);
+    width: 40px;
+    height: 5px;
+    margin: 0 auto;
+}
+.title-box {
+    margin-bottom: 3rem;
+}
+.title-box h2 {
+    position: relative;
+}
+.title-box h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: var(--main-color);
+    width: 100px;
+    bottom: -12px;
+    left: 0;
+}
+/* End Component  */
+/* Start About */
+.title {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+/* End About */
+/* Start Services */
+.services-box {
+    border-radius: 1rem;
+}
+.services-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+.ico-circle {
+    display: block;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    box-shadow: 0 0 0 10px var(--main-color);
+}
+.service-box .ico-circle i {
+    line-height: 0;
+    font-size: 40px;
+}
+.s-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.services-box .s-description {
+    color: var(--secondary-text-color);
+}
+/* End Services */
+/* Start Counter */
+.counter {
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 8rem 0;
+}
+.layer {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: 0.7;
+    z-index: 0;
+}
+.counter .container {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.counter .ico-circle {
+    height: 60px;
+    width: 60px;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+.counter-content p {
+    font-size: 2rem;
+}
+/* End Counter */
+/* Start Portfolio */
+.w-title {
+    font-size: 1.2rem;
+}
+.work-box .work-image {
+    overflow: hidden;
+}
+.work-box a img {
+    transition: 1s all;
+    max-width: 100%;
+    height: auto;
+}
+.work-box {
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+}
+.work-box:hover img {
+    transform: scale(1.5,1.5);
+}
+.portfolio .work-box .work-content .w-more span:first-child {
+    color: var(--main-color);
+}
+.portfolio .work-box .w-more:last-child {
+    font-size: 0.8rem;
+}
+.w-like a {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+/* End Portfolio */
+/* Start Testimonials */
+.testimonials {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 5rem 0;
+    z-index: 0;
+}
+.testimonials .container {
+    position: relative;
+    z-index: 1;
+}
+.carousel-item img {
+    height: 150;
+    width: 150px;
+    border-radius: 50%;
+}
+.author {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+.carousel-item .discription {
+    margin: 0 auto;
+    width: 60%;
+}
+.carousel-indicators [data-bs-target] {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+/* End Testimonials */
+/* Start Profile */
+.card-body {
+    position: relative;
+}
+.card-cat {
+    background-color: var(--main-color);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.category {
+    padding: 5px 16px;
+    margin: auto;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card-title a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s all;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.card-title a:hover {
+    color: var(--main-color);
+}
+.card-text {
+    color: var(--secondary-text-color);
+}
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar {
+    width: 30px;
+}
+.card-footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s;
+} 
+.card-footer a:hover {
+    color: var(--main-color);
+} 
+/* End Profile */
+/* Start Contact */
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+.contact .container {
+    position: relative;
+    z-index: 11;
+    padding: 8rem 0rem;
+}
+.message-content form textarea,
+.message-content form input {
+    border: 1px solid #ced4da;
+}
+.message-content form textarea:focus,
+.message-content form input:focus {
+    box-shadow: 0 0 0 4px #cde1f8;
+    border: 1px solid var(--main-color);
+}
+.message-content form textarea {
+    height: 8rem;
+}
+.message-content form .btn { 
+    border: none;
+    margin: 1rem auto;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: .75rem 1.25rem;
+}
+.message-content form .btn:hover {
+    background-color: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+    transition: all 500ms ease;
+}
+.get-content ul li span {
+    color: var(--main-color);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.get-social {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media  (max-width: 992px) {
+    .get-social {
+        width: 60%;
+    }
+}
+.get-social .ico-circle {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--main-color);
+    color: var(--text-color);
+    font-size: 1.25rem;
+    transition: 0.5s;
+}
+.get-social .ico-circle:hover {
+    color: #fff;
+    background-color: var(--main-color);
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+/* End Contact */
