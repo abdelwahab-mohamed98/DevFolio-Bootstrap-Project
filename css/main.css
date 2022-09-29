@@ -36,6 +36,93 @@ body {
     left: 0;
 }
 /* End Component  */
+/* Start Header  */
+.header {
+    background-image: url(../images/hero-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.header-layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.header .container,
+.header .caption {
+    position: relative;
+    z-index: 1;
+}
+.navbar ul li {
+    padding: 10px 0 10px 30px;
+}
+.navbar ul li a {
+    position: relative;
+}
+.navbar ul li a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.navbar .active::after,
+.navbar ul li a:hover::after {
+    visibility: visible;
+    width: 100%;
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.header .caption h1 {
+    font-size: 5rem;
+}
+.header .caption h3::after {
+    content: "";
+    animation-name: header-animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 2rem;
+}
+@keyframes header-animation {
+    0% { content: "|";}
+    5% { content: " |";}
+    10% { content: "D |";}
+    15% { content: "DE |";}
+    20% { content: "DEV |";}
+    25% { content: "DEVE |";}
+    30% { content: "DEVEL |";}
+    35% { content: "DEVELO |";}
+    40% { content: "DEVELOP |";}
+    45% { content: "DEVELOPE |";}
+    50% { content: "DEVELOPER |";}
+    55% { content: "DEVELOPE |";}
+    60% { content: "DEVELOP |";}
+    65% { content: "DEVELO |";}
+    60% { content: "DEVEL |";}
+    65% { content: "DEVE |";}
+    70% { content: "DEV |";}
+    75% { content: "DE |";}
+    80% { content: "D |";}
+    85% { content: " |";}
+    90% { content: "|";}
+    95% { content: " |";}
+    100% { content: "|";}
+}
+/* End Header  */
 /* Start About */
 .title {
     color: var(--text-color);
